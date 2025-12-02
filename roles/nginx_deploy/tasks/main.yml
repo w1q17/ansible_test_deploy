@@ -14,8 +14,8 @@
     mode: '0644'
     backup: yes
   notify:
-      - Validate nginx config
-      - Reload nginx
+      - check nginx
+      - reload ngginx
   become: true
 
 

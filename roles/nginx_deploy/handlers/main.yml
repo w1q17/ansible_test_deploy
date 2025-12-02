@@ -9,4 +9,4 @@
   ansible.builtin.service:
       name: "{{ nginx_package_name }}"
       state: reloaded
-      become: true
+      become: true 
