@@ -1,0 +1,6 @@
+nginx_package_name: nginx
+nginx_conf_name: "{{ nginx_server_name }}"
+nginx_conf_path: "/etc/nginx/conf.d/{{ nginx_conf_name }}"
+nginx_listen: 80
+nginx_server_name: _ 
+#nginx_proxy_port: 3000
