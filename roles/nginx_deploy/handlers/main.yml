@@ -1,12 +1,12 @@
 - name: check nginx 
-ansible.builtin.command: nginx -t
-become: true
-register: nginx_test
-failed_when: nginx_test.rc != 0
+  ansible.builtin.command: nginx -t
+      become: true
+      register: nginx_test
+      failed_when: nginx_test.rc != 0
 
 
 - name: reload ngginx
-ansible.builtin.service:
-name: "{{ nginx_package_name }}"
-state: reloaded
-become: true
+  ansible.builtin.service:
+      name: "{{ nginx_package_name }}"
+      state: reloaded
+      become: true
