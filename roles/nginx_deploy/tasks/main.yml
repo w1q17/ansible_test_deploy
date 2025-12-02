@@ -2,7 +2,7 @@
   ansible.builtin.package:
     name: "{{ nginx_package_name }}"
     state: present
-    become: true
+  become: true
 
 
 - name: deploy .conf + backup
