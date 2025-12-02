@@ -24,4 +24,4 @@
       name: "{{ nginx_package_name }}"
       state: started
       enabled: true
-      become: true
+  become: true
