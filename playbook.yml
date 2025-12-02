@@ -1,0 +1,7 @@
+- hosts: websrvs
+  become: true
+  roles:
+    - role: nginx_deploy
+      vars:
+        nginx_server_name: test.ru
+        nginx_proxy_port: 3000
