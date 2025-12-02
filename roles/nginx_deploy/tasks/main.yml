@@ -13,7 +13,7 @@
     group: root
     mode: '0644'
     backup: yes
-      notify:
+  notify:
       - Validate nginx config
       - Reload nginx
   become: true
